@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.menu img {
+    width: 25%;
+    height: 25%;
+}
+
+.menuButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

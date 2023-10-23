@@ -1,0 +1,15 @@
+nav ul {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    background-color: rgb(62, 89, 242);
+    margin-top: 0;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul li {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
