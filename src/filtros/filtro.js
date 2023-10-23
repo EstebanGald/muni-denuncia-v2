@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './filtros.css';
 
 const data = [
-  { id: 1, nombre: 'Denuncia 1', tipo: 'seguridad', clase: 'A' },
-  { id: 2, nombre: 'Denuncia 2', tipo: 'seguridad', clase: 'B' },
-  { id: 3, nombre: 'Denuncia 3', tipo: 'transito', clase: 'C' },
-  { id: 4, nombre: 'Denuncia 4', tipo: 'infraestructura', clase: 'D' },
+  { id: 1, nombre: 'Juan Perez Gonzalez', tipo: 'seguridad', clase: 'Portonazo', direccion: 'Calle Falsa 123' },
+  { id: 2, nombre: 'María Isabel Galdame', tipo: 'seguridad', clase: 'Robo de vivienda', direccion: 'MejorPaisDeChile 123' },
+  { id: 3, nombre: 'Armando Casas Robustas', tipo: 'transito', clase: 'Semáforo defectuoso', direccion: 'Pyong Yang 444' },
+  { id: 4, nombre: 'Pedro Perez Pereira', tipo: 'infraestructura', clase: 'Rayado', direccion: 'LosVTR 003' },
   // Agrega más datos según sea necesario
 ];
 
@@ -14,7 +15,7 @@ const Filtro = () => {
   const filteredData = topic ? data.filter(item => item.tipo === topic) : data;
 
   return (
-    <div>
+    <div className='formulario'>
       <select
         value={topic}
         onChange={(e) => setTopic(e.target.value)}
@@ -29,8 +30,9 @@ const Filtro = () => {
         {filteredData.map(item => (
           <li key={item.id}>
             <p>Nombre: {item.nombre}</p>
-            <p>Tipo: {item.tipo}</p>
-            <p>Clase: {item.clase}</p>
+            <p>Tópico: {item.tipo}</p>
+            <p>Tipo: {item.clase}</p>
+            <p>Dirección: {item.direccion}</p>
           </li>
         ))}
       </ul>

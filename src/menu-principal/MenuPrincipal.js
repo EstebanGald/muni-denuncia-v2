@@ -8,14 +8,11 @@ const MenuPrincipal = () => {
     return <div className='menu'>
             <img src={mapa} alt="mapa" className="mapa" />
             <div className='menuButtons'>
-            <Button variant="contained" component={Link} to='/menu-principal/MenuPrincipal'>
+            <Button variant="contained" component={Link} to='/filtros/filtro'>
             Buscar
             </Button>
-            <Button variant="contained" component={Link} to='/menu-principal/MenuPrincipal'>
+            <Button variant="contained" component={Link} to='/creardenuncia/Formulario'>
             Generar denuncia
-            </Button>
-            <Button variant="contained" component={Link} to='/menu-principal/MenuPrincipal'>
-            Perfil
             </Button>
             </div>
         </div>

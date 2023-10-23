@@ -1,6 +1,6 @@
 nav ul {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     list-style-type: none;
     background-color: rgb(62, 89, 242);
     margin-top: 0;
@@ -12,4 +12,8 @@ nav ul {
 nav ul li {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.navMenuPrincipal {
+    margin-right: 30px;
 }

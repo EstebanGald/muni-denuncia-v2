@@ -16,7 +16,7 @@ const Formulario = () => {
 
         console.log(Denuncia);
 
-        //window.location.href = "http://localhost:3000/otra-ruta"; AGREGAR RUTA
+        window.location.href = "http://localhost:3000/menu-principal/MenuPrincipal";
     }
 
 
@@ -30,8 +30,8 @@ const Formulario = () => {
 
 
     const inputStyle = {
-        width: "400px", // Ajusta el ancho del cuadro de texto aquí
-        height: "100px" // Ajusta la altura del cuadro de texto aquí
+        width: "400px",
+        height: "100px"
       };
 
 
