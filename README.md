@@ -8,9 +8,10 @@ App para realizar denuncias en tu municipalidad
 ## Ejecución
 Para ejecutar la app se deben realizar los siguientes pasos:
 1. Acceder de la carpeta App, ya sea en terminal o por file explorer
-2. Primero ejecutar "npm install" para instalar node-modules folder
-3. Para ejecutar nuestra app necesita las siguientes dependencias:
+2. Para ejecutar nuestra app necesita las siguientes dependencias:
+    - "npm install" para instalar folder node-modules
     - "npm install react-router-dom"
+    - "npm install react-hook-form"
     - "npm install @mui/material @emotion/react @emotion/styled"
     - ejecutar "npm start" para iniciar app
 
