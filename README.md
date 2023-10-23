@@ -3,7 +3,7 @@ App para realizar denuncias en tu municipalidad
 ## Integrantes
 - Sebastian Meneses: 201973568-3
 - Francisco Muñoz: 201973581-0
-- Esteban Carrasco: 201773646-5
+- Esteban Carrasco: 201773546-5
 # Importante
 ## Ejecución
 Para ejecutar la app se deben realizar los siguientes pasos:
