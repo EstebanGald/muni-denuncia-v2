@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import React, { useState } from 'react';
-
+import './form.css';
 const Formulario = () => {
 
     const { register, formState: { errors }, watch, handleSubmit } = useForm({
@@ -30,12 +30,13 @@ const Formulario = () => {
 
 
     const inputStyle = {
-        width: "400px",
+        width: "800px",
         height: "100px"
       };
 
 
-    return <div>
+    return (
+       <div className="form-container">
         <h2>Nueva Denuncia</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
@@ -108,6 +109,7 @@ const Formulario = () => {
             <input type="submit" value="Enviar" />
         </form>
     </div>
+    );
 }
 
 export default Formulario;
