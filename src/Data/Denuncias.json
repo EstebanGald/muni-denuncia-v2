@@ -1,30 +1,30 @@
 {
     "1":{
         "UserID": 1,
-        "tipo": "Seguridad",
+        "tipo": "seguridad",
         "clase": "Portonazo",
-        "direccion": "Gabriela Mistral 4791",
-        "Estado": "Completada"
+        "direccion": "Calle Falsa 123",
+        "Estado": "Completo"
     },
     "2":{
         "UserID": 2,
-        "tipo": "Seguridad",
+        "tipo": "seguridad",
         "clase": "Robo de vivienda",
-        "direccion": "Las Perdices 467",
+        "direccion": "MejorPaisDeChile 123",
         "Estado": "En Curso"
     },
     "3":{
         "UserID": 3,
-        "tipo": "Transito",
+        "tipo": "transito",
         "clase": "Semáforo defectuoso",
-        "direccion": "Jose Miguel Carrera 7853",
+        "direccion": "Pyong Yang 444",
         "Estado": "En Curso"
     },
     "4":{
         "UserID": 4,
-        "tipo": "Infraestructura",
+        "tipo": "infraestructura",
         "clase": "Rayado",
-        "direccion": "San Antonio 8984",
-        "Estado": "En Espera"
+        "direccion": "LosVTR 003",
+        "Estado": "Incompleto"
     }
 }

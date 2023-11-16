@@ -1,6 +1,7 @@
 //Importa JSON de datos conocidos (Funcionan como Diccionario)
 import userJSON from './Usuarios.json';
 import denunciasJSON from './Denuncias.json';
+import comunasJSON from './Comunas.json';
 
 //Retorna una lista que asocia denuncia a usuario
 export function ListDenunciaUsuario() {
@@ -26,8 +27,7 @@ export function ListDenunciaUsuario() {
                     "nombre": dataU.FullName,
                     "tipo": dataD.tipo,
                     "clase": dataD.clase,
-                    "direccion": dataD.direccion,
-                    "Estado": dataD.Estado
+                    "direccion": dataD.direccion
                 }
                 arrDU.push(obj);
             }
@@ -181,4 +181,20 @@ export function EstadisticasPorDenuncia(){
         EstadisticasDenuncia[key]= obj;
     });
     return EstadisticasDenuncia;
+}
+
+export function ListadoComunas(){
+    console.log("Listado Comunas");
+    let KeysC= Object.keys(comunasJSON);
+    let arr= [];
+    KeysC.forEach((key)=>{
+        let data= comunasJSON[key];
+        let obj={
+            "key": key,
+            "nombre": data.Name,
+        }
+        arr.push(obj)
+    });
+    console.log("listaComunas is: ",arr);
+    return arr;
 }

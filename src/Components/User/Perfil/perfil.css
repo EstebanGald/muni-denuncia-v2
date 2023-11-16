@@ -1,0 +1,39 @@
+.Perfil{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Perfil.FotoPerfil{
+    height: 50%;
+    width: 50%;
+    background-color: powderblue;
+}
+
+.DatosUsuario{
+    border-style: solid;
+    height: 50%;
+    width: 50%;
+    align-items: left;
+    background-color: aquamarine;
+}
+
+.DatosUsuario ul{
+    list-style-type: none;
+}
+
+.DatosUsuario ul li{
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.DatosUsuario.TextField{
+    color: black;
+    fill: aquamarine;
+    height: 25%;
+    width: 50%;
+}

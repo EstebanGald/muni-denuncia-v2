@@ -1,0 +1,26 @@
+.ListaUsuarios{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Contenido{
+    border-style: solid;
+    height: 85%;
+    width: 95%;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.Contenido table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Contenido th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
