@@ -7,10 +7,41 @@ import { ListDenunciaUsuario } from './../../../Data/DataListManager';
 //Guarda los resultados de ListDenunciaUsuario() en una constante
 const data= ListDenunciaUsuario();
 
+const ColorEstado = (estado) => {
+  switch (estado) {
+    case 'Completada':
+      return 'green'; 
+    case 'En Curso':
+      return 'orange';
+    case 'En Espera':
+      return 'red';
+    default:
+      return 'black';
+  }
+};
+
+
+const IconoEstado = (estado) => {
+  switch (estado) {
+    case 'Completada':
+      return '✔️'; 
+    case 'En Curso':
+      return '⚠️';
+    case 'En Espera':
+      return '❌';
+    default:
+      return '';
+  }
+};
+
 const Filtro = () => {
   const [topic, setTopic] = useState(''); // Inicializa el tema en una cadena vacía
 
-  const filteredData = topic ? data.filter(item => item.tipo === topic) : data;
+  const filteredData = topic ? data.filter(item => item.tipo.toLowerCase() === topic.toLowerCase()) : data;
+
+  console.log('topic:', topic);
+  console.log('filteredData:', filteredData);
+
 
   return (
     <div className='formulario'>
@@ -23,17 +54,34 @@ const Filtro = () => {
         <option value="transito">Transito</option>
         <option value="infraestructura">Infraestructura</option>
       </select>
-
-      <ul>
-        {filteredData.map(item => (
-          <li key={item.id}>
-            <p>Nombre: {item.nombre}</p>
-            <p>Tópico: {item.tipo}</p>
-            <p>Tipo: {item.clase}</p>
-            <p>Dirección: {item.direccion}</p>
-          </li>
-        ))}
-      </ul>
+  
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre Denunciante</th>
+            <th>Tema Denuncia</th>
+            <th>Carácter Denuncia</th>
+            <th>Ubicación</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredData.map(item => (
+            <tr key={item.id}>
+              <td>{item.nombre}</td>
+              <td>{item.tipo}</td>
+              <td>{item.clase}</td>
+              <td>{item.direccion}</td>
+              <td>
+                <span style={{ color: ColorEstado(item.Estado) }}>
+                  {IconoEstado(item.Estado)}
+                  {item.Estado}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
