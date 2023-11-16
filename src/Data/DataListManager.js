@@ -26,7 +26,8 @@ export function ListDenunciaUsuario() {
                     "nombre": dataU.FullName,
                     "tipo": dataD.tipo,
                     "clase": dataD.clase,
-                    "direccion": dataD.direccion
+                    "direccion": dataD.direccion,
+                    "Estado": dataD.Estado
                 }
                 arrDU.push(obj);
             }
