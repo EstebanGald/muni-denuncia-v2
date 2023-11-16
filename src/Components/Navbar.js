@@ -77,6 +77,9 @@ const NavFunctionUser=() => (
                 <Button variant="contained" component={Link} to='/User/App/Generar'>
                     Generar Denuncia
                 </Button>
+                <Button variant="contained" component={Link} to='/User/App/Estadisticas'>
+                    Estadisticas Comuna
+                </Button>
                 <Button variant="contained" component={Link} to='/User/App/Perfil'>
                     Editar Perfil
                 </Button>
@@ -137,6 +140,9 @@ const NavigationBar=() => {
                 return <NavFunctionUser />;
             case '/User/App/Perfil':
                 //console.log("Navigator: Selected User Functions Perfil");
+                return <NavFunctionUser />;
+            case '/User/App/Estadisticas':
+                //console.log("Navigator: Selected User Functions estadistica");
                 return <NavFunctionUser />;
             case '/Admin/login':
                 //console.log("Navigator: Selected Admin Login");

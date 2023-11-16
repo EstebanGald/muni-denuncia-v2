@@ -14,6 +14,9 @@ const ViewMenu = () => {
         <Button variant="contained" component={Link} to='/User/App/Generar'>
             Generar denuncia
         </Button>
+        <Button variant="contained" component={Link} to='/User/App/Estadisticas'>
+            Estadísticas
+        </Button>
       </div>
     );
   }

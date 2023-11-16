@@ -1,17 +1,18 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Importa la barra de navegacion
-import NavigationBar from './Navbar';
+import NavigationBar from './Components/Navbar';
 //Vistas sobre Acceso a la app
-import Login from './Access/Login';
-import Registro from './Access/Registro';
+import Login from './Components/Access/Login';
+import Registro from './Components/Access/Registro';
 //Vistas sobre funcionalidades de la app para usuario
-import ViewMenu from './User/Menu/Menu';
-import Filtro from './User/Filtro/filtro';
-import Formulario from './User/GenerarDenuncias/Formulario';
-import PerfilUsuario from './User/Perfil/Perfil';
+import ViewMenu from './Components/User/Menu/Menu';
+import Filtro from './Components/User/Filtro/filtro';
+import Formulario from './Components/User/GenerarDenuncias/Formulario';
+import PerfilUsuario from './Components/User/Perfil/Perfil';
 //Vistas sobre funcionalidades de la app para admin
-import ListadoDenuncias from './Admin/ListaDenuncias/ListaDenuncias';
-import ListadoUsuarios from './Admin/ListaUsuarios/ListaUsuarios';
+import ListadoDenuncias from './Components/Admin/ListaDenuncias/ListaDenuncias';
+import ListadoUsuarios from './Components/Admin/ListaUsuarios/ListaUsuarios';
+import Estadisticas from './Components/User/Estadisticas';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/Admin/App" element={<ListadoDenuncias/>}/>
             <Route path="/Admin/App/Denuncias" element={<ListadoDenuncias/>}/>
             <Route path="/Admin/App/Users" element={<ListadoUsuarios/>}/>
+            <Route path="/User/App/Estadisticas" element={<Estadisticas/>}/>
           </Routes>
         </div>
       </Router>
