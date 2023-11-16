@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import './filtros.css';
+//Importa del manejador de datos JSON aquel que genera la data
+import { ListDenunciaUsuario } from './../../../Data/DataListManager';
 
-const data = [
-  { id: 1, nombre: 'Juan Perez Gonzalez', tipo: 'seguridad', clase: 'Portonazo', direccion: 'Calle Falsa 123' },
-  { id: 2, nombre: 'María Isabel Galdame', tipo: 'seguridad', clase: 'Robo de vivienda', direccion: 'MejorPaisDeChile 123' },
-  { id: 3, nombre: 'Armando Casas Robustas', tipo: 'transito', clase: 'Semáforo defectuoso', direccion: 'Pyong Yang 444' },
-  { id: 4, nombre: 'Pedro Perez Pereira', tipo: 'infraestructura', clase: 'Rayado', direccion: 'LosVTR 003' },
-  // Agrega más datos según sea necesario
-];
+//Guarda los resultados de ListDenunciaUsuario() en una constante
+const data= ListDenunciaUsuario();
 
 const Filtro = () => {
   const [topic, setTopic] = useState(''); // Inicializa el tema en una cadena vacía

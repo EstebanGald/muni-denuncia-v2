@@ -1,0 +1,18 @@
+{
+    "1":{
+        "Username": "user1",
+        "FullName": "Juan Perez Gonzalez"
+    },
+    "2":{
+        "Username": "user2",
+        "FullName": "María Isabel Galdame"
+    },
+    "3":{
+        "Username": "user3",
+        "FullName": "Armando Casas Robustas"
+    },
+    "4":{
+        "Username": "user4",
+        "FullName": "Pedro Perez Pereira"
+    }
+}
