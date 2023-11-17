@@ -73,6 +73,7 @@ const Filtro = () => {
               <td>{item.tipo}</td>
               <td>{item.clase}</td>
               <td>{item.direccion}</td>
+              <td>{item.Estado}</td>
               <td>
                 <span style={{ color: ColorEstado(item.Estado) }}>
                   {IconoEstado(item.Estado)}
