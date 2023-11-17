@@ -48,6 +48,7 @@ const Filtro = () => {
       <select
         value={topic}
         onChange={(e) => setTopic(e.target.value)}
+        style={{ width: '20%' }}
       >
         <option value="">Mostrar Todo</option>
         <option value="seguridad">Seguridad</option>
